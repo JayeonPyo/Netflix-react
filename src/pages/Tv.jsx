@@ -3,11 +3,10 @@ import Banner from '../components/Banner';
 import Preview from '../components/Preview';
 import MovieContainer from '../components/MovieContainer';
 import axios from "axios";
-import withLayout from '../components/withLayout';
 
 
 
-class Main extends React.Component {
+ class Tv extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -62,10 +61,10 @@ class Main extends React.Component {
      <MovieContainer title="TV프로그램" movies={
      this.state.movies}/>
  
- <MovieContainer title="인기있는 영화" movies={
+    <MovieContainer title="인기있는 영화" movies={
      this.state.movies2}/>
 
-<MovieContainer title="이번주 인기 영화" movies={
+    <MovieContainer title="이번주 인기 영화" movies={
      this.state.movies3}/>
 
     
@@ -75,4 +74,4 @@ class Main extends React.Component {
   }
 }
 
-export default  withLayout(Main);
+export default Tv;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 
 
@@ -73,7 +74,7 @@ const Banner = props => {
     <Wrapper>
       <Logo src="https://cdn.pixelprivacy.com/wp-content/uploads/2017/12/Netflix-Logo-1024x277.png" />
       <NavText>
-        <NavTextItem onClick = {onClickColor} className="nav">홈</NavTextItem>
+        <NavTextItem onClick = {onClickColor} className="nav"> <Link to="">홈</Link></NavTextItem>
         <NavTextItem onClick = {onClickColor} className="nav">TV 프로그램</NavTextItem>
         <NavTextItem onClick = {onClickColor} className="nav">영화</NavTextItem>
         <NavTextItem onClick = {onClickColor} className="nav">최신 등록 콘텐츠</NavTextItem>

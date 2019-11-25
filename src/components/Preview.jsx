@@ -47,7 +47,6 @@ flex:1;
 }
 &:nth-child(2){ 
 flex:1.5;
-
 }
 &:nth-child(3){ 
 flex:1;
